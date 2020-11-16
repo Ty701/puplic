@@ -1,0 +1,67 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Nov 09, 2020 at 12:21 PM
+-- Server version: 10.1.9-MariaDB
+-- PHP Version: 5.6.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `iridiumdb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `irididumtable`
+--
+
+CREATE TABLE `irididumtable` (
+  `OBJECT_NAME` text NOT NULL,
+  `OBJECT_ID` text NOT NULL,
+  `CENTER_NAME` text NOT NULL,
+  `REF_FRAME` text NOT NULL,
+  `TIME_SYSTEM` text NOT NULL,
+  `MEAN_ELEMENT_THEORY` text NOT NULL,
+  `EPOCH` text NOT NULL,
+  `MEAN_MOTION` decimal(11,0) NOT NULL,
+  `ECCENTRICITY` decimal(11,0) NOT NULL,
+  `INCLINATION` decimal(11,0) NOT NULL,
+  `RA_OF_ASC_NODE` decimal(11,0) NOT NULL,
+  `ARG_OF_PERICENTER` decimal(11,0) NOT NULL,
+  `MEAN_ANOMALY` decimal(11,0) NOT NULL,
+  `EPHEMERIS_TYPE` int(11) NOT NULL,
+  `CLASSIFICATION_TYPE` text NOT NULL,
+  `NORAD_CAT_ID` int(11) NOT NULL,
+  `ELEMENT_SET_NO` int(11) NOT NULL,
+  `REV_AT_EPOCH` int(11) NOT NULL,
+  `BSTAR` decimal(10,0) NOT NULL,
+  `MEAN_MOTION_DOT` decimal(10,0) NOT NULL,
+  `MEAN_MOTION_DDOT` decimal(10,0) NOT NULL,
+  `SEMIMAJOR_AXIS` decimal(10,0) NOT NULL,
+  `PERIOD` decimal(10,0) NOT NULL,
+  `APOAPSIS` decimal(10,0) NOT NULL,
+  `OBJECT_TYPE` text NOT NULL,
+  `RCS_SIZE` text NOT NULL,
+  `COUNTRY_CODE` text NOT NULL,
+  `LAUNCH_DATE` date NOT NULL,
+  `SITE` text NOT NULL,
+  `DECAY_DATE` date NOT NULL,
+  `DECAYED` text NOT NULL,
+  `FILE` int(11) NOT NULL,
+  `GP_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
